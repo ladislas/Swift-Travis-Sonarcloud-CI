@@ -1,15 +1,7 @@
 env:
   global:
-    # Swift version snapshot
     - SWIFT_SNAPSHOT=swift-4.2-RELEASE
-    # Turn on sonarcloud 
     - SONARCLOUD_ELIGIBLE=true
-    # Set up includes & excludes
-    - SONAR_PROJECT_KEY=ladislas_Swift-Travis-Sonarcloud-CI
-    - SONAR_ORGANIZATION=ladislas-github
-    - SONAR_COVERAGE_EXCLUSIONS="File_to_exclude_in_coverage.swift, FolderToExcludeFromCoverage/**"
-    - SONAR_SOURCES_EXCLUSIONS="Tests/**, Package.swift, File_to_exclude_in_sources.swift, FolderToExcludeFromSources/**"
-    - SONAR_SOURCES=.
 
 matrix:
   include:
