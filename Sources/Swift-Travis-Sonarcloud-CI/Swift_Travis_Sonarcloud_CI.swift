@@ -14,12 +14,14 @@ class MyClass {
 
 	}
 
-	public func say() {
+	public func say() -> String {
 		print(v1)
+		return v1
 	}
 
-	public func count() {
+	public func count() -> Int {
 		print(v2)
+		return v2
 	}
 
 }
